@@ -75,6 +75,7 @@ const Landing = ({setIsNotSearched,setCoordinates}) => {
                 handleChange(e);
               }}
               name="search"
+              placeholder="Search"
               className="search"
             />
             <div className="autoSearch">

@@ -127,7 +127,7 @@ hr{
 .header{
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   height: auto;
   margin-bottom: 50px;
 }
@@ -217,4 +217,29 @@ hr{
 }
 .foot-logo{
   font-family: "Special Gothic Expanded One", sans-serif !important;
+}
+
+@media (max-width : 750px) {
+  .search > input{
+    width: 70vw;
+  }
+  .autoSearch{
+    width: 70vw;
+  }
+  .dataImg{
+    width: 40px;
+  }
+  .graph > h2{
+    text-align: start;
+    margin: 50px;
+  }
+  .weather-data > div{
+    width: 33vw;
+  }
+  .weather-data{
+    column-gap: 30px;
+  }
+  .foot-images> a > img{
+    width: 25px !important;
+  }
 }

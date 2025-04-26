@@ -99,7 +99,7 @@ const WeatherUI = ({ coordinates, weatherData, setweatherData, setIsNotSearched 
           </ul>
           </div>
             <div className="overview container">
-            <div className="location"><h2>{weatherData.location?.name + " , " + weatherData.location?.region}</h2></div>
+            <div className="location" style={{textAlign: "center"}}><h2>{weatherData.location?.name + " , " + weatherData.location?.region}</h2></div>
             <div className="feels-like" style={{textAlign: "center"}}><h4>Feels like {`${weatherData.current?.feelslike_c} C`}</h4>
             <h4>{weatherData.current?.condition.text}</h4></div>
           </div>
@@ -185,9 +185,6 @@ const WeatherUI = ({ coordinates, weatherData, setweatherData, setIsNotSearched 
             right: 30,
             left: 20,
             bottom: 5,
-          }}
-          padding={{
-            left: 10,
           }}
         >
           <XAxis dataKey="time" />
