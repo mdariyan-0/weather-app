@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Special+Gothic+Expanded+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+h1{
+  font-family: "Special Gothic Expanded One", sans-serif !important;
+  margin-bottom: 17vh;
+}
+body{
+  background-image: url(/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+}
+
+.outer-block {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  font-family: sans-serif;
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+.inner-block{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  width: 20px;
+  transition: 0.5s ease ;
+  filter: brightness(1) invert(1);
+}
+.info{
+  font-size: 1.2rem;
+}
+.search > input{
+  width: 40vw;
+  padding: 10px;
+  border-start-start-radius: 8px;
+  border-start-end-radius: 8px;
+  border: none;
+  text-align: center;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.74);
+  font-size: 1rem;
+}
+.search > input:focus{
+  box-shadow: 0px 0px 12px white;
+  border: 0.5px black solid;
+  border-radius: unset;
+  border-start-start-radius: 8px;
+  border-start-end-radius: 8px;
+  
+}
+.search > input:focus ~ .autoSearch{
+  border-bottom: 0.5px black solid !important;
+  border-inline: 0.5px black solid !important;
+  box-shadow: 0px 0px 12px white;
+}
+ul {
+  list-style: none;
+  padding-block: 10px;
+}
+ul > .cityList {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.cityList:hover{
+  background-color: white;
+}
+.autoSearch{
+  width: 40vw;
+  color: black;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.74);
+  border-end-start-radius: 8px;
+  border-end-end-radius: 8px;
+  display: block;
+}
+.weather-overview{
+  width: 100%;
+  height: 60vh;
+  box-shadow: 2px 2px 20px white;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.weather-data{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10vh;
+  padding: 20px;
+  padding-block :80px;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+.weather-data > div{
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.dataImg{
+  width: 60px;
+  filter: brightness(1) invert(1);
+}
+hr{
+  width: 25%;
+  border: solid white 0.1px;
+  border-radius: 8px;
+}
+.container{
+  width: 80vw;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: auto;
+  margin-bottom: 50px;
+}
+.location{
+  font-size:1.7rem;
+}
+.feels-like{
+  font-size: 1.3rem;
+}
+.header > ul{
+  display: flex;
+  gap: 40px;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+.header> h1{
+  margin: 0;
+}
+.header > ul > li:hover{
+  opacity: 50%;
+}
+.header > ul > li{
+  transition: 0.2s ease-out;
+  font-size: 1.5rem;
+}
+.overview{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  justify-content: flex-start;
+}
+.divider{
+  width: 90vw !important;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.graph{
+  width: 100%;
+  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+.graph> .graphData{
+  background-color: rgba(255, 255, 255, 0.732);
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  padding: 15px;
+  padding-top: 40px;
+  width: inherit;
+  height: 60vh;
+}
+.graph > h2{
+  text-align: center;
+  margin-bottom: 70px;
+}
+.dataHead > div{
+  display: inline-block;
+  transform: translatex(6px);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+  padding: 6px;
+}
+  
+.data{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  padding-block: 30px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+.foot-images{
+  display: flex;
+  gap: 30px;
+}
+.footer > h3 > a> img{
+  width: 30px;
+  filter: brightness(1) invert(1);
+}
+.foot-logo{
+  font-family: "Special Gothic Expanded One", sans-serif !important;
+}
