@@ -3,7 +3,7 @@ import useDebounce from "../hooks/debounce";
 const Landing = ({setIsNotSearched,setCoordinates}) => {
   const [cities, setCities] = useState([]);
   const [value, setValue] = useState("");
-  let OWM_API = import.meta.env.VITE_COORDINATES
+  let OWM_API = "64ad41525e67ceb870f1b9745e19a44c"
   const autoSearch = document.getElementsByClassName("autoSearch")[0];
   const handleChange = (e) => {
     setValue(e.target.value);
