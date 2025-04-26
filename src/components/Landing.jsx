@@ -12,7 +12,7 @@ const Landing = ({setIsNotSearched,setCoordinates}) => {
   
   const fetchCity = async () => {
     let rawData = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${debouncedValue}&limit=5&appid=${OWM_API}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${debouncedValue}&limit=5&appid=${OWM_API}`
     );
     let data = await rawData.json();
     let primCityArr = [];

@@ -97,7 +97,7 @@ const WeatherUI = ({ coordinates, weatherData, setweatherData, setIsNotSearched 
   };
   const fetchWeather = async () => {
     let rawData = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=e1f4156f008e41b5947143413240410&q=${coordinates.lat.toFixed(
+      `https://api.weatherapi.com/v1/forecast.json?key=e1f4156f008e41b5947143413240410&q=${coordinates.lat.toFixed(
         4
       )},${coordinates.lon.toFixed(4)}&days=1&aqi=yes`
     );
